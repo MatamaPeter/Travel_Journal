@@ -24,15 +24,27 @@
 }
 .journal-entry{
   display: flex;
-
+  text-align: left;
+  margin-top: 20px;
+  height: 200px;
 }
 .main-image-container{
-  width: 125px;
-  height: 168px;
+  width: 150px;
+  height: 200px;
   overflow: hidden;
   border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
 }
 .main-image{
   width: 100%;
   height: 100%;
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 1280px;
 }
